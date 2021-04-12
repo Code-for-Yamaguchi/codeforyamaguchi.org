@@ -1,5 +1,13 @@
 import Head from 'next/head'
 
+import { PageHeader } from '../components/PageHeader'
+
 export default function Home() {
-  return <></>
+  return (
+      <>
+        <div>
+          <PageHeader />
+        </div>
+      </>
+  )
 }
