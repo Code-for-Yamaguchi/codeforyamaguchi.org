@@ -13,7 +13,7 @@ export const PageHeader = () => {
 
   return (
     <div className="fixed inset-x-0 top-0 bg-white z-50">
-      <div className="flex justify-between items-center px-4 py-6 sm:px-6 md:justify-start md:space-x-10">
+      <div className="flex justify-between items-center px-4 py-6 border-b-2 border-gray-100 sm:px-6 md:justify-start md:space-x-10">
         <div className="flex justify-start lg:w-0 lg:flex-1">
           <Link href="/">
             <Image
