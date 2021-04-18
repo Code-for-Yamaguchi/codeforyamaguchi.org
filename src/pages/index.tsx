@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <div>
         <PageHeader />
-          <PageTop />
+        <PageTop />
       </div>
     </>
   )
