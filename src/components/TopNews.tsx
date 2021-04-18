@@ -5,7 +5,7 @@ import { SectionTitle } from './SectionTitle'
 export const TopNews = () => {
     return (
         <div>
-            <SectionTitle />
+            <SectionTitle title="News" subtitle="お知らせ" />
         </div>
     )
 }
