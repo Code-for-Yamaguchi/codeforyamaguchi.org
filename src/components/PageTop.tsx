@@ -10,7 +10,8 @@ export const PageTop = () => {
                 </div>
                 <div className="flex justify-center text-center text-gray-400 text-sm sm:text-xl clearfix">
                     テクノロジーを活用して地域課題を解決しよう。<br />
-                    課題が多い地方。挑戦する人が少ないためより大きな価値を生む。
+                    挑戦者が少ない地方はチャンスがいっぱい。<br />
+                    地方を少しでも盛り上げよう。
                 </div>
             </div>
         </div>
