@@ -3,6 +3,7 @@ import Head from 'next/head'
 import { PageHeader } from '../components/PageHeader'
 import { PageTop } from '../components/PageTop'
 import { TopNews } from '../components/TopNews'
+import { TopAbout } from '../components/TopAbout'
 import { PageFooter } from '../components/PageFooter'
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
         <PageHeader />
         <PageTop />
         <TopNews />
+          <TopAbout />
         <PageFooter />
       </div>
     </>
