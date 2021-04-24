@@ -5,11 +5,11 @@ import { LinkList } from './LinkList'
 import { DetailButton } from './DetailButton'
 
 export const TopNews = () => {
-    return (
-        <div>
-            <SectionTitle title="News" subtitle="お知らせ" />
-            <LinkList />
-            <DetailButton link="/news" />
-        </div>
-    )
+  return (
+    <div>
+      <SectionTitle title="News" subtitle="お知らせ" />
+      <LinkList />
+      <DetailButton link="/news" />
+    </div>
+  )
 }

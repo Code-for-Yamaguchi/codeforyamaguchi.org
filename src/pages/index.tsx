@@ -11,8 +11,8 @@ export default function Home() {
       <div>
         <PageHeader />
         <PageTop />
-          <TopNews />
-          <PageFooter />
+        <TopNews />
+        <PageFooter />
       </div>
     </>
   )

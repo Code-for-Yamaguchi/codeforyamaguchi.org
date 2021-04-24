@@ -19,10 +19,10 @@ module.exports = {
       primary: '#15bb44',
       normal: {
         default: '#333d56',
-        hover: '#212121'
+        hover: '#212121',
       },
       white: 'white',
-      footer: '#d1d5db'
+      footer: '#d1d5db',
     },
     backgroundColor: {
       primary: '#15bb44',
@@ -31,14 +31,14 @@ module.exports = {
         blue: '#6dc4f2',
         indigo: '#6187de',
         green: '#33d5ba',
-        yellow: '#ffd13c'
+        yellow: '#ffd13c',
       },
       white: 'white',
       btn: {
         normal: '#4f46e5',
-        hover: '#303f9f'
+        hover: '#303f9f',
       },
-      footer: '#1f2937'
+      footer: '#1f2937',
     },
     extend: {},
   },
