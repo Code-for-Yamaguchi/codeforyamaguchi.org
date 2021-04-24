@@ -17,7 +17,10 @@ module.exports = {
     },
     textColor: {
       primary: '#15bb44',
-      normal: '#333d56',
+      normal: {
+        default: '#333d56',
+        hover: '#212121'
+      },
       white: 'white',
     },
     backgroundColor: {
@@ -28,6 +31,11 @@ module.exports = {
         indigo: '#6187de',
         green: '#33d5ba',
         yellow: '#ffd13c'
+      },
+      white: 'white',
+      btn: {
+        normal: '#4f46e5',
+        hover: '#303f9f'
       }
     },
     extend: {},
