@@ -8,7 +8,7 @@ export const LinkList = () => {
           <a href={newsLink.url}>
             <div className="flex flex-row py-2">
               <div className="text-normal opacity-80 pr-4">
-                {newsLink.date.toLocaleDateString('ja-JP')}
+                {newsLink.date}
               </div>
               <div className="text-white items-center px-2.5 py-0.5 rounded-md text-sm font-medium bg-primary">
                 {newsLink.tag}
