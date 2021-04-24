@@ -49,6 +49,11 @@ export const PageHeader = () => {
                               Blog
                           </div>
                       </Link>
+                      <Link href="/about">
+                          <div className="cursor-pointer text-base font-medium text-normal-default hover:text-normal-hover">
+                              About
+                          </div>
+                      </Link>
                       <Link href="/contact">
                           <div className="cursor-pointer text-base font-medium text-normal-default hover:text-normal-hover">
                               Contact
@@ -117,6 +122,11 @@ export const PageHeader = () => {
                           <Link href="/blog">
                               <div className="cursor-pointer text-base font-medium text-normal-default hover:text-normal-hover">
                                   Blog
+                              </div>
+                          </Link>
+                          <Link href="/about">
+                              <div className="cursor-pointer text-base font-medium text-normal-default hover:text-normal-hover">
+                                  About
                               </div>
                           </Link>
                           <Link href="/contact">
