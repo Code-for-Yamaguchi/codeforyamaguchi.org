@@ -3,10 +3,7 @@ import Link from 'next/link'
 const navigation = {
   main: [
     { name: 'Home', href: '/' },
-    { name: 'News', href: '/news' },
-    { name: 'Blog', href: '/blog' },
-    { name: 'About', href: '/about' },
-    { name: 'Contact', href: '/contact' },
+    { name: 'Event', href: 'https://codeforyamaguchi.peatix.com/' },
   ],
   social: [
     {

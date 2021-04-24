@@ -39,26 +39,11 @@ export const PageHeader = () => {
                     Home
                   </div>
                 </Link>
-                <Link href="/news">
+                <a href="https://codeforyamaguchi.peatix.com/">
                   <div className="cursor-pointer text-base font-medium text-normal-default hover:text-normal-hover">
-                    News
+                    Event
                   </div>
-                </Link>
-                <Link href="/blog">
-                  <div className="cursor-pointer text-base font-medium text-normal-default hover:text-normal-hover">
-                    Blog
-                  </div>
-                </Link>
-                <Link href="/about">
-                  <div className="cursor-pointer text-base font-medium text-normal-default hover:text-normal-hover">
-                    About
-                  </div>
-                </Link>
-                <Link href="/contact">
-                  <div className="cursor-pointer text-base font-medium text-normal-default hover:text-normal-hover">
-                    Contact
-                  </div>
-                </Link>
+                </a>
               </Popover.Group>
               <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
                 <a
@@ -113,26 +98,11 @@ export const PageHeader = () => {
                         Home
                       </div>
                     </Link>
-                    <Link href="news/">
+                    <a href="https://codeforyamaguchi.peatix.com/">
                       <div className="cursor-pointer text-base font-medium text-normal-default hover:text-normal-hover">
-                        News
+                        Event
                       </div>
-                    </Link>
-                    <Link href="/blog">
-                      <div className="cursor-pointer text-base font-medium text-normal-default hover:text-normal-hover">
-                        Blog
-                      </div>
-                    </Link>
-                    <Link href="/about">
-                      <div className="cursor-pointer text-base font-medium text-normal-default hover:text-normal-hover">
-                        About
-                      </div>
-                    </Link>
-                    <Link href="/contact">
-                      <div className="cursor-pointer text-base font-medium text-normal-default hover:text-normal-hover">
-                        Contact
-                      </div>
-                    </Link>
+                    </a>
                   </div>
                   <div>
                     <a
