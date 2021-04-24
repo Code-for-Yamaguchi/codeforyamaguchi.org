@@ -47,7 +47,7 @@ export const PageHeader = () => {
               </Popover.Group>
               <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
                 <a
-                  href="#"
+                  href="https://forms.gle/yJXfyBCw2RTX15qm9"
                   className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-btn-normal hover:bg-btn-hover"
                 >
                   参加する
@@ -106,7 +106,7 @@ export const PageHeader = () => {
                   </div>
                   <div>
                     <a
-                      href="#"
+                      href="https://forms.gle/yJXfyBCw2RTX15qm9"
                       className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-btn-normal hover:bg-btn-hover"
                     >
                       参加する
