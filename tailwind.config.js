@@ -22,6 +22,7 @@ module.exports = {
         hover: '#212121'
       },
       white: 'white',
+      footer: '#d1d5db'
     },
     backgroundColor: {
       primary: '#15bb44',
@@ -36,7 +37,8 @@ module.exports = {
       btn: {
         normal: '#4f46e5',
         hover: '#303f9f'
-      }
+      },
+      footer: '#1f2937'
     },
     extend: {},
   },
