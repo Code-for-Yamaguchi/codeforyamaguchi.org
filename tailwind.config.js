@@ -15,6 +15,21 @@ module.exports = {
       '1/10': '10%',
       '1/20': '5%',
     },
+    textColor: {
+      primary: '#15bb44',
+      normal: '#333d56',
+      white: 'white',
+    },
+    backgroundColor: {
+      primary: '#15bb44',
+      circle: {
+        red: '#ff4d3d',
+        blue: '#6dc4f2',
+        indigo: '#6187de',
+        green: '#33d5ba',
+        yellow: '#ffd13c'
+      }
+    },
     extend: {},
   },
   variants: {
