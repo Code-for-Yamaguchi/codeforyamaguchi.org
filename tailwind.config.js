@@ -17,6 +17,7 @@ module.exports = {
     },
     textColor: {
       primary: '#15bb44',
+      top: '#111517',
       normal: {
         default: '#333d56',
         hover: '#212121',
