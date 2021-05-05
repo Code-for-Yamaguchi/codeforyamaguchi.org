@@ -21,7 +21,6 @@
     "sass": "^1.32.8"
   },
   "devDependencies": {
-    "@egjs/react-flicking": "^3.7.1",
     "@headlessui/react": "^1.0.0",
     "@heroicons/react": "^1.0.1",
     "@types/react": "^17.0.3",
