@@ -6,7 +6,7 @@ import { DetailButton } from './DetailButton'
 
 export const TopNews = () => {
   return (
-    <div>
+    <div className="anchor" id="news">
       <SectionTitle title="News" subtitle="お知らせ" />
       <LinkList />
     </div>

@@ -3,7 +3,7 @@ import { ActivityList } from './ActivityList'
 
 export const TopAbout = () => {
   return (
-    <div>
+    <div className="anchor" id="about">
       <SectionTitle title="About" subtitle="Code for Yamaguchiについて" />
       <div className="flex justify-center text-xs sm:text-lg text-center leading-relaxed my-12 mx-2 tracking-wide">
         Code for Yamaguchiは、
