@@ -9,6 +9,7 @@ export const TopNews = () => {
     <div className="anchor" id="news">
       <SectionTitle title="News" subtitle="お知らせ" />
       <LinkList />
+        <DetailButton link="/event" text="一覧へ"/>
     </div>
   )
 }

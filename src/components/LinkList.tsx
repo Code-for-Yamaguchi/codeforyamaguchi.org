@@ -10,11 +10,14 @@ export const LinkList = () => {
               <div className="text-normal opacity-80 pr-4">
                 {newsLink.date}
               </div>
-              <div className="text-white items-center px-2.5 py-0.5 rounded-md text-sm font-medium bg-primary">
-                {newsLink.tag}
-              </div>
+              {newsLink.tag &&
+                <div
+                  className="text-black items-center px-2.5 py-0.5 rounded-md text-sm font-medium border-2 border-green-600">
+                  {newsLink.tag}
+                </div>
+              }
             </div>
-            <div className="text-normal pb-2">{newsLink.title}</div>
+            <div className="text-normal pb-2 hover:text-primary">{newsLink.title}</div>
           </a>
         </li>
       ))}
