@@ -9,7 +9,7 @@ export const TopEvents = () => {
         <div className="anchor" id="event">
             <SectionTitle title="Event" subtitle="開催予定のイベント" />
             <EventsList />
-            <DetailButton link="/event"/>
+            <DetailButton link="/event" text="過去のイベント"/>
         </div>
     )
 }
