@@ -7,8 +7,8 @@ const works = [
     desc:
       '東京都のOSSをもとに山口県版を作成し、運用を行っています。山口県庁の方々に管理していただいているオープンデータを利用してデータを可視化しています。',
     tag: 'Doing',
-    url: 'https://github.com/nishidayoshikatsu/covid19-yamaguchi',
-  },
+    url: 'https://github.com/nishidayoshikatsu/covid19-yamaguchi'
+  }
 ]
 
 export const WorksList = () => {

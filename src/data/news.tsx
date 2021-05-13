@@ -10,7 +10,8 @@ export const NewsLinks: NewsLink[] = [
     date: '2021.05.09',
     title: 'Code for Yamaguchi定例会議 #1',
     tag: '定例会議',
-    url: 'https://docs.google.com/document/d/1k3v_oCQ4PGL3gHnYEyQ-IFzxsHxHcuWf7lDh9JP8reA/edit?usp=sharing',
+    url:
+      'https://docs.google.com/document/d/1k3v_oCQ4PGL3gHnYEyQ-IFzxsHxHcuWf7lDh9JP8reA/edit?usp=sharing',
   },
   {
     date: '2021.04.25',

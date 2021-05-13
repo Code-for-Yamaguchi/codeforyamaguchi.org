@@ -9,15 +9,15 @@ import { PageFooter } from '../components/PageFooter'
 
 export default function Home() {
   return (
-      <div>
-        <PageHeader />
-        <PageTop />
-        <TopNews />
-        <TopEvents />
-        <TopAbout />
-        <TopJoin />
-        <TopWorks />
-        <PageFooter />
-      </div>
+    <div>
+      <PageHeader />
+      <PageTop />
+      <TopNews />
+      <TopEvents />
+      <TopAbout />
+      <TopJoin />
+      <TopWorks />
+      <PageFooter />
+    </div>
   )
 }
