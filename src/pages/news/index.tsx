@@ -4,11 +4,15 @@ import { DetailTitle } from '../../components/DetailTitle'
 import { LinkList } from '../../components/LinkList'
 import { PageFooter } from '../../components/PageFooter'
 
+const pages = [
+    { name: 'News', href: '/news', current: 'nidshia' },
+]
+
 export default function News() {
     return (
         <div>
             <PageHeader />
-            <BreadCrumbs />
+            <BreadCrumbs pathList={pages} />
             <DetailTitle title="News" subtitle="お知らせ" />
             <LinkList />
             <PageFooter />
