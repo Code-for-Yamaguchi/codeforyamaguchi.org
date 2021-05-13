@@ -7,9 +7,9 @@ import { DetailButton } from './DetailButton'
 export const TopEvents = () => {
     return (
         <div className="anchor" id="event">
-            <SectionTitle title="Event" subtitle="開催予定のイベント" />
+            <SectionTitle title="Events" subtitle="開催予定のイベント" />
             <EventsList />
-            <DetailButton link="/event" text="過去のイベント"/>
+            <DetailButton link="/events" text="過去のイベント"/>
         </div>
     )
 }
