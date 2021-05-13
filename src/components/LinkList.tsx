@@ -1,9 +1,13 @@
 import { NewsLinks } from '../data/news'
 
-export const LinkList = () => {
+type Props = {
+  numlimit?: number
+}
+
+export const LinkList = ({ numlimit = NewsLinks.length }: Props) => {
   return (
     <ul className="flex justify-center flex-col divide-y divide-gray-200 px-10 md:px-40 py-6">
-      {NewsLinks.map((newsLink) => (
+      {NewsLinks.slice(0,numlimit).map((newsLink) => (
         <li key={newsLink.title} className="flex justify-start text-sm sm:text-xl">
           <a href={newsLink.url}>
             <div className="flex flex-row py-2">
