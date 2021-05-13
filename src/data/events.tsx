@@ -18,4 +18,10 @@ export const EventsLinks: EventsLink[] = [
         date: '2021.04.25 14:40-17:00',
         url: 'https://yamaguchi-stopcovid19-11.peatix.com/',
     },
+    {
+        image: '/events/meeting1.png',
+        title: 'Code for Yamaguchi定例会議#1',
+        date: '2021.05.09 20:00-21:00',
+        url: 'https://docs.google.com/document/d/1k3v_oCQ4PGL3gHnYEyQ-IFzxsHxHcuWf7lDh9JP8reA/edit?usp=sharing',
+    },
 ]
