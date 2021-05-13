@@ -7,17 +7,17 @@ export const LinkList = () => {
         <li key={newsLink.title} className="flex justify-start text-sm sm:text-xl">
           <a href={newsLink.url}>
             <div className="flex flex-row py-2">
-              <div className="text-normal opacity-80 pr-4">
+              <div className="text-normal opacity-80 pr-4 text-gray-500">
                 {newsLink.date}
               </div>
               {newsLink.tag &&
                 <div
-                  className="text-black items-center px-2.5 py-0.5 rounded-md text-sm font-medium border-2 border-green-600">
+                  className="text-gray-600 items-center px-2.5 py-0.5 rounded-md text-sm font-normal border border-green-600">
                   {newsLink.tag}
                 </div>
               }
             </div>
-            <div className="text-normal pb-2 hover:text-primary">{newsLink.title}</div>
+            <div className="font-medium pb-2 text-gray-900 hover:text-primary">{newsLink.title}</div>
           </a>
         </li>
       ))}

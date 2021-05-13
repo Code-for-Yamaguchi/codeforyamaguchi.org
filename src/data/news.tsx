@@ -24,8 +24,4 @@ export const NewsLinks: NewsLink[] = [
     tag: 'イベント',
     url: 'https://codeforyamaguchi-opening.peatix.com/',
   },
-  {
-    date: '2021.04.25',
-    title: 'Code for Yamaguchi始動！',
-  },
 ]
