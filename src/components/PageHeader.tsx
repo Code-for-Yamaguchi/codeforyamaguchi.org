@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 
-function classNames (...classes) {
+function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
