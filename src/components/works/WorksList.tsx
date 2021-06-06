@@ -1,20 +1,10 @@
 import Image from 'next/image'
-
-const works = [
-  {
-    image: '/stopcovid19yamaguchi.png',
-    work: '山口県公認 新型コロナウイルス感染症対策サイト',
-    desc:
-      '東京都のOSSをもとに山口県版を作成し、運用を行っています。山口県庁の方々に管理していただいているオープンデータを利用してデータを可視化しています。',
-    tag: 'Doing',
-    url: 'https://github.com/nishidayoshikatsu/covid19-yamaguchi',
-  },
-]
+import { WorksLinks } from '../../data/works'
 
 export const WorksList = () => {
   return (
     <ul className="flex my-10 justify-center flex-col　md:flex-row flex-wrap">
-      {works.map((work) => (
+      {WorksLinks.map((work) => (
         <li
           key={work.work}
           className="flex flex-col justify-start items-center bg-white mb-10 mx-6 md:w-1/5"
