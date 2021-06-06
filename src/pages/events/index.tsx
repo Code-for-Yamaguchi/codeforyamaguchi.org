@@ -1,7 +1,7 @@
 import { PageHeader } from '../../components/PageHeader'
-import { BreadCrumbs } from '../../components/BreadCrumbs'
-import { DetailTitle } from '../../components/DetailTitle'
-import { EventsList } from '../../components/EventsList'
+import { BreadCrumbs } from '../../components/share/BreadCrumbs'
+import { DetailTitle } from '../../components/share/DetailTitle'
+import { EventsList } from '../../components/events/EventsList'
 import { PageFooter } from '../../components/PageFooter'
 
 const pages = [{ name: 'Events', href: '/events', current: true }]
