@@ -1,4 +1,5 @@
 import Image from 'next/image'
+
 import { WorksLinks } from '../../data/works'
 
 export const WorksList = () => {

@@ -17,9 +17,20 @@ module.exports = {
     },
     textColor: {
       primary: '#15bb44',
+      top: '#111517',
       normal: {
         default: '#333d56',
         hover: '#212121',
+      },
+      gray: {
+        200: '#e5e7eb',
+        300: '#d1d5db',
+        400: '#9ca3af',
+        500: '#6b7280',
+        600: '#4b5563',
+        700: '#374151',
+        800: '#1f2937',
+        900: '#111827',
       },
       white: 'white',
       footer: '#d1d5db',
