@@ -4,12 +4,12 @@ const description =
   '「山口県の挑戦者を応援する」をミッションに掲げ、ITをはじめとした地域課題を解決することをはじめとしたさまざまな活動を行っていくコミュニティです。'
 
 class MyDocument extends Document {
-  static async getInitialProps(ctx: DocumentContext) {
+  static async getInitialProps (ctx: DocumentContext) {
     const initialProps = await Document.getInitialProps(ctx)
     return { ...initialProps }
   }
 
-  render() {
+  render () {
     return (
       <Html lang="ja">
         <Head>

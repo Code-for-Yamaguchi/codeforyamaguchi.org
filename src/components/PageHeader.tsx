@@ -5,10 +5,6 @@ import Link from 'next/link'
 
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
-}
-
 export const PageHeader = () => {
   return (
     <Popover className="fixed inset-x-0 top-0 bg-white z-50">

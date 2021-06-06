@@ -1,5 +1,3 @@
-import Image from 'next/image'
-
 import { JoinLinks } from '../../data/join'
 
 export const JoinList = () => {

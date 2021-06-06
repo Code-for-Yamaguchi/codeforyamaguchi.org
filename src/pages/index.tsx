@@ -7,7 +7,7 @@ import { TopJoin } from '../components/TopJoin'
 import { TopWorks } from '../components/TopWorks'
 import { PageFooter } from '../components/PageFooter'
 
-export default function Home() {
+export default function Index () {
   return (
     <div>
       <PageHeader />

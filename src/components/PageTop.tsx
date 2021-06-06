@@ -1,6 +1,5 @@
 import { ArrowRightIcon } from '@heroicons/react/solid'
 
-import Image from 'next/image'
 import Link from 'next/link'
 
 export const PageTop = () => {

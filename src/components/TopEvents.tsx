@@ -1,5 +1,3 @@
-import Link from 'next/link'
-
 import { SectionTitle } from './share/SectionTitle'
 import { EventsList } from './events/EventsList'
 import { DetailButton } from './share/DetailButton'
