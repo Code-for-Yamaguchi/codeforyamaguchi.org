@@ -6,7 +6,7 @@ import { TopWorks } from '../components/TopWorks'
 import { PageFooter } from '../components/PageFooter'
 import { TopMember } from '../components/TopMember'
 
-export default function Index () {
+export default function Index() {
   return (
     <>
       <div>

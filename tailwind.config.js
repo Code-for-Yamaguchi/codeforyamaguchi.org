@@ -13,14 +13,14 @@ module.exports = {
       '1/8': '12.5%',
       '1/9': '11.1%',
       '1/10': '10%',
-      '1/20': '5%'
+      '1/20': '5%',
     },
     textColor: {
       primary: '#15bb44',
       top: '#111517',
       normal: {
         default: '#333d56',
-        hover: '#212121'
+        hover: '#212121',
       },
       gray: {
         200: '#e5e7eb',
@@ -30,10 +30,10 @@ module.exports = {
         600: '#4b5563',
         700: '#374151',
         800: '#1f2937',
-        900: '#111827'
+        900: '#111827',
       },
       white: 'white',
-      footer: '#d1d5db'
+      footer: '#d1d5db',
     },
     backgroundColor: {
       primary: '#15bb44',
@@ -42,19 +42,19 @@ module.exports = {
         blue: '#6dc4f2',
         indigo: '#6187de',
         green: '#33d5ba',
-        yellow: '#ffd13c'
+        yellow: '#ffd13c',
       },
       white: 'white',
       btn: {
         normal: '#4f46e5',
-        hover: '#303f9f'
+        hover: '#303f9f',
       },
-      footer: '#1f2937'
+      footer: '#1f2937',
     },
-    extend: {}
+    extend: {},
   },
   variants: {
-    extend: {}
+    extend: {},
   },
-  plugins: []
+  plugins: [],
 }
