@@ -1,5 +1,5 @@
-import { SectionTitle } from './SectionTitle'
-import { ActivityList } from './ActivityList'
+import { SectionTitle } from './share/SectionTitle'
+import { AboutList } from './about/AboutList'
 
 export const TopAbout = () => {
   return (
@@ -14,7 +14,7 @@ export const TopAbout = () => {
         <br />
         さまざまな活動を行っていくためのコミュニティです。
       </div>
-      <ActivityList />
+      <AboutList />
     </div>
   )
 }

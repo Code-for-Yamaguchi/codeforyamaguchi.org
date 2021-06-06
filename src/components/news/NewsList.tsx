@@ -1,6 +1,6 @@
-import { NewsLinks } from '../data/news'
+import { NewsLinks } from '../../data/news'
 
-export const LinkList = () => {
+export const NewsList = () => {
   return (
     <ul className="flex justify-center flex-col divide-y divide-gray-200 px-10 md:px-40 py-6">
       {NewsLinks.map((newsLink) => (
