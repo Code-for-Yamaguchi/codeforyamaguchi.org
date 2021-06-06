@@ -6,7 +6,7 @@ import { PageFooter } from '../../components/PageFooter'
 
 const pages = [{ name: 'Events', href: '/events', current: true }]
 
-export default function Events () {
+export default function Events() {
   return (
     <div>
       <PageHeader />

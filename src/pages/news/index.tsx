@@ -6,7 +6,7 @@ import { PageFooter } from '../../components/PageFooter'
 
 const pages = [{ name: 'News', href: '/news', current: 'nidshia' }]
 
-export default function News () {
+export default function News() {
   return (
     <div>
       <PageHeader />

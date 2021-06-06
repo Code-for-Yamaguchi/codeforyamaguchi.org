@@ -6,7 +6,7 @@ type Props = {
   all: boolean
 }
 
-function mkdata (all: Props) {
+function mkdata(all: Props) {
   if (all) {
     return EventsLinks
   } else {
@@ -19,11 +19,9 @@ function mkdata (all: Props) {
 export const EventsList = ({ all }: Props) => {
   return (
     <>
-      {!all && !mkdata(all).length
-        ? (
+      {!all && !mkdata(all).length ? (
         <div className="flex justify-center my-10">現在開催予定のイベントはありません。</div>
-          )
-        : (
+      ) : (
         <ul className="flex mt-10 justify-center flex-col　md:flex-row flex-wrap max-w-7xl mx-auto px-4 sm:px-6">
           {mkdata(all).map((event) => (
             <li
@@ -48,7 +46,7 @@ export const EventsList = ({ all }: Props) => {
             </li>
           ))}
         </ul>
-          )}
+      )}
     </>
   )
 }
