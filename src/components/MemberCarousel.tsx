@@ -20,7 +20,7 @@ const MemberCarousel: VFC = () => {
   }
 
   return (
-    <div className="my-10">
+    <div className="my-10 w-9/12 mx-auto">
       <Slider {...settings}>
         {MembersLinks.map((member, i) => (
           <div key={i} className="text-center">
