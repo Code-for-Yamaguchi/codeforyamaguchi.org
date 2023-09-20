@@ -1,4 +1,4 @@
-import { ArrowRightIcon } from '@heroicons/react/solid'
+//import { ArrowRightIcon } from '@heroicons/react/solid'
 
 import Link from 'next/link'
 
@@ -14,7 +14,7 @@ export const PageTop = () => {
         <Link href="/">
           <div className="cursor-pointer flex justify-center text-normal hover:text-primary hover:bg-white border border-green-500 text-md sm:text-xl rounded-full py-4 px-8 sm:px-16 mx-12 md:mx-40 mb-20 bg-primary text-white">
             参加する
-            <ArrowRightIcon className="ml-3 h-5 w-5" aria-hidden="true" />
+            {/*<ArrowRightIcon className="ml-3 h-5 w-5" aria-hidden="true" />*/}
           </div>
         </Link>
       </div>

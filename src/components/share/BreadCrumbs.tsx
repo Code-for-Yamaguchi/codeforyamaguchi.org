@@ -1,4 +1,4 @@
-import { HomeIcon } from '@heroicons/react/solid'
+//import { HomeIcon } from '@heroicons/react/solid'
 
 type Props = {
   pathList: {
@@ -18,7 +18,7 @@ export const BreadCrumbs = ({ pathList }: Props) => {
         <li>
           <div>
             <a href="/" className="text-gray-400 hover:text-gray-500">
-              <HomeIcon className="flex-shrink-0 h-5 w-5" aria-hidden="true" />
+              {/*<HomeIcon className="flex-shrink-0 h-5 w-5" aria-hidden="true" />*/}
               <span className="sr-only">Home</span>
             </a>
           </div>
