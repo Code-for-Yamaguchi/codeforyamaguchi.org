@@ -13,7 +13,7 @@ export const AboutList = () => {
             className="flex justify-center"
             src={about.icon}
             alt={about.act}
-            layout="fixed"
+            //layout="fixed"
             width={150}
             height={150}
           />

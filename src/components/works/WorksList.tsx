@@ -15,7 +15,7 @@ export const WorksList = () => {
               className="flex justify-center"
               src={work.image}
               alt={work.work}
-              layout="fixed"
+              //layout="fixed"
               width={300}
               height={150}
             />

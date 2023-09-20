@@ -35,7 +35,7 @@ export const EventsList = ({ all }: Props) => {
                   className="flex justify-center"
                   src={event.image}
                   alt={event.title}
-                  layout="fixed"
+                  //layout="fixed"
                   width={300}
                   height={150}
                 />
