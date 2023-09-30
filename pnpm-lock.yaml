@@ -11,6 +11,9 @@ dependencies:
   '@react-three/fiber':
     specifier: ^8.14.3
     version: 8.14.3(react-dom@18.2.0)(react@18.2.0)(three@0.157.0)
+  maath:
+    specifier: ^0.10.4
+    version: 0.10.4(@types/three@0.156.0)(three@0.157.0)
   next:
     specifier: 13.5.3
     version: 13.5.3(react-dom@18.2.0)(react@18.2.0)
@@ -2153,6 +2156,16 @@ packages:
     dependencies:
       yallist: 4.0.0
     dev: true
+
+  /maath@0.10.4(@types/three@0.156.0)(three@0.157.0):
+    resolution: {integrity: sha512-neHNZ302rFJzXih8r9o1tUfMouO0WKO/as5n1kX72IZvXv5qIRJyWJ2hdXBj/dCZorvnFOBLSkY8SdPmjfeXLw==}
+    peerDependencies:
+      '@types/three': '>=0.144.0'
+      three: '>=0.144.0'
+    dependencies:
+      '@types/three': 0.156.0
+      three: 0.157.0
+    dev: false
 
   /maath@0.9.0(@types/three@0.156.0)(three@0.157.0):
     resolution: {integrity: sha512-aAR8hoUqPxlsU8VOxkS9y37jhUzdUxM017NpCuxFU1Gk+nMaZASZxymZrV8LRSHzRk/watlbfyNKu6XPUhCFrQ==}
