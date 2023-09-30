@@ -1,4 +1,4 @@
-import { JoinLinks } from '../../data/join'
+import { JoinLinks } from '@/data/join'
 
 export const JoinList = () => {
   return (

@@ -1,4 +1,4 @@
-import { NewsLinks } from '../../data/news'
+import { NewsLinks } from '@/data/news'
 
 type Props = {
   numlimit?: number

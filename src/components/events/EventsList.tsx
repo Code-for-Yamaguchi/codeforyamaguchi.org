@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import { EventsLinks } from '../../data/events'
+import { EventsLinks } from '@/data/events'
 
 type Props = {
   all: boolean
