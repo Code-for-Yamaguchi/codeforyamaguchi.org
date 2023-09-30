@@ -23,7 +23,7 @@ export const BreadCrumbs = ({ pathList }: any) => {
             </a>
           </div>
         </li>
-        {pathList && pathList.map((p) => (
+        {pathList && pathList.map((p: any) => (
           <li key={p.name}>
             <div className="flex items-center">
               <svg

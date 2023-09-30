@@ -6,7 +6,7 @@ type Props = {
   all: boolean
 }
 
-function mkdata (all: Props) {
+function mkdata (all: any) {
   if (all) {
     return EventsLinks
   } else {
