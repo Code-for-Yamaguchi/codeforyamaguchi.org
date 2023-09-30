@@ -7,7 +7,7 @@ export const PageTop = () => {
     <div className="relative z-0">
       <div className="h-screen flex flex-col justify-center items-center px-4 py-6 sm:px-6 space-y-6">
         <div className="flex justify-center text-top font-bold text-base text-3xl sm:text-3xl md:text-5xl clearfix mb-5 z-50">
-          山口県の挑戦者
+          山口県にゆかりのある挑戦者
           <br className="sm:hidden" />
           を応援する
         </div>

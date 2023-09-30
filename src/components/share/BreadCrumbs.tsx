@@ -8,7 +8,7 @@ type Props = {
   }
 }
 
-export const BreadCrumbs = ({ pathList }: Props) => {
+export const BreadCrumbs = ({ pathList }: any) => {
   return (
     <nav
       className="max-w-7xl mx-auto px-4 sm:px-6 flex relative mt-32 mb-8 md:justify-start md:space-x-10"
@@ -23,7 +23,7 @@ export const BreadCrumbs = ({ pathList }: Props) => {
             </a>
           </div>
         </li>
-        {pathList.map((p) => (
+        {pathList && pathList.map((p: any) => (
           <li key={p.name}>
             <div className="flex items-center">
               <svg

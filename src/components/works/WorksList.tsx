@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import { WorksLinks } from '../../data/works'
+import { WorksLinks } from '@/data/works'
 
 export const WorksList = () => {
   return (

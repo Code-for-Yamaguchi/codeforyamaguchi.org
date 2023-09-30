@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { AboutLinks } from '../../data/about'
+import { AboutLinks } from '@/data/about'
 
 export const AboutList = () => {
   return (
