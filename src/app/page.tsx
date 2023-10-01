@@ -6,7 +6,7 @@ import { TopAbout } from '@/components/TopAbout'
 import { TopJoin } from '@/components/TopJoin'
 import { TopWorks } from '@/components/TopWorks'
 import { PageFooter } from '@/components/PageFooter'
-import { Fuku3D } from '@/components/Fuku3D'
+import { Fuku3D } from '@/components/fuku3D'
 
 export default function Home () {
   return (

@@ -2,6 +2,7 @@
 
 import { Canvas } from '@react-three/fiber'
 import { Environment, OrbitControls, useGLTF, Stage, BakeShadows } from "@react-three/drei";
+import { Model } from './Fuku-san';
 
 export const Fuku3D = (props: any) => {
   return (
@@ -16,11 +17,4 @@ export const Fuku3D = (props: any) => {
       </Canvas>
     </div>
   )
-}
-
-useGLTF.preload('/models/fuku-san.glb')
-
-function Model({ name, ...props }: any) {
-  const { nodes } = useGLTF('/models/fuku-san.glb')
-  return <mesh castShadow receiveShadow geometry={nodes[name].geometry} material={nodes[name].material} material-roughness={1} {...props} dispose={null} />
 }
