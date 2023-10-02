@@ -11,7 +11,6 @@ export default function Text({ title }) {
       },
       text,
     } = value;
-    console.info('text', text)
     if (text && text.content) {
       return (
         <span

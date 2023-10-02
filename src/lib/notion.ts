@@ -3,7 +3,7 @@ import { cache } from 'react';
 
 export const revalidate = 3600; // revalidate the data at most every hour
 
-const databaseId = process.env.NOTION_DATABASE_ID ?? "";
+//const databaseId = process.env.NOTION_DATABASE_ID ?? "";
 
 /**
  * Returns a random integer between the specified values, inclusive.
@@ -23,7 +23,7 @@ const notion = new Client({
   auth: process.env.NOTION_TOKEN,
 });
 
-export const getDatabase = cache(async () => {
+export const getDatabase = cache(async (databaseId: string) => {
   const response = await notion.databases.query({
     database_id: databaseId,
   });
@@ -35,7 +35,7 @@ export const getPage = cache(async (pageId: string) => {
   return response;
 });
 
-export const getPageFromSlug = cache(async (slug: string) => {
+export const getPageFromSlug = cache(async (databaseId: string, slug: string) => {
   const response = await notion.databases.query({
     database_id: databaseId,
     filter: {

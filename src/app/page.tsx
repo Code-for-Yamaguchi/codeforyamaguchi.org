@@ -12,7 +12,7 @@ import { getDatabase } from '@/lib/notion'
 export const databaseId = process.env.NOTION_DATABASE_ID ?? "";
 
 async function getPosts() {
-  const database = await getDatabase();
+  const database = await getDatabase(databaseId);
 
   return database;
 }
