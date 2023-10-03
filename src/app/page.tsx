@@ -7,11 +7,13 @@ import { TopJoin } from '@/components/TopJoin'
 import { TopWorks } from '@/components/TopWorks'
 import { PageFooter } from '@/components/PageFooter'
 import { Fuku3D } from '@/components/fuku3D'
+import { getDatabase } from '@/lib/notion'
 
-export default function Home () {
+export default async function Home () {
   return (
     <div>
       <PageHeader />
+      <PageTop />
       <Fuku3D />
       <TopNews />
       <TopEvents />

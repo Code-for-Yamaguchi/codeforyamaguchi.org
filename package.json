@@ -15,6 +15,7 @@
     "prettier:pick": "pretty-quick --staged"
   },
   "dependencies": {
+    "@notionhq/client": "^2.2.13",
     "@react-three/drei": "^9.86.3",
     "@react-three/fiber": "^8.14.3",
     "maath": "^0.10.4",

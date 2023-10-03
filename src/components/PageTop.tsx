@@ -2,7 +2,8 @@
 
 import Link from 'next/link'
 
-export const PageTop = () => {
+export const PageTop = async () => {
+
   return (
     <div className="relative z-0">
       <div className="h-screen flex flex-col justify-center items-center px-4 py-6 sm:px-6 space-y-6">
