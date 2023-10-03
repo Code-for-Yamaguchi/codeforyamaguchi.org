@@ -1,22 +1,8 @@
 //import { ArrowRightIcon } from '@heroicons/react/solid'
 
-import { getBlocks, getPage } from '@/lib/notion';
 import Link from 'next/link'
-import { renderBlock } from './notion/renderer';
-import { Fragment } from 'react';
-
-const pageId = process.env.NOTION_PAGE_ID ?? "";
 
 export const PageTop = async () => {
-  const blocks = await getBlocks(pageId);
-
-  return (
-    <div>
-      {blocks.map((block: any) => (
-        <Fragment key={block.id}>{renderBlock(block)}</Fragment>
-      ))}
-    </div>
-  )
 
   return (
     <div className="relative z-0">
