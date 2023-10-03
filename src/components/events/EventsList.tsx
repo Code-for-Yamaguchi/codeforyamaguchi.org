@@ -22,13 +22,67 @@ function mkdata (all, data) {
 const eventDatabaseId = process.env.NOTION_EVENT_DATABASE_ID ?? ""
 
 export const EventsList = async ({ all }: Props) => {
-  const events = await getDatabase(eventDatabaseId);
+  const now = new Date();
+  const dateFormatter = new Intl.DateTimeFormat('ja-JP', {
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+    timeZone: 'Asia/Tokyo'
+  });
+  const formattedDate = dateFormatter.format(now).replace(/\//g, '-');
+
+  //将来のイベント取得
+  const featureEvents = await getDatabase({
+    databaseId: eventDatabaseId,
+    filter: {
+      property: 'イベント日',
+      date: {
+        on_or_after: formattedDate,
+      },
+    },
+    sorts: [
+      {
+        property: "イベント日",
+        direction: "ascending"
+      }
+    ],
+    page_size: 100
+  });
+
+  //直近のイベント3件を取得
+  const recentPastEvents = await getDatabase({
+    databaseId: eventDatabaseId,
+    filter: {
+      property: 'イベント日',
+      date: {
+        on_or_before: formattedDate,
+      },
+    },
+    sorts: [
+      {
+        property: "イベント日",
+        direction: "descending"
+      }
+    ],
+    page_size: 3
+  });
+
+  //将来も含めた全てのイベントを取得
+  const allEvents = await getDatabase({
+    databaseId: eventDatabaseId,
+    sorts: [
+      {
+        property: "イベント日",
+        direction: "descending"
+      }
+    ],
+    page_size: 100
+  });
 
   return (
     <>
       <ul className="flex mt-10 justify-center flex-col md:flex-row flex-wrap max-w-7xl mx-auto px-4 sm:px-6">
-        {events.map((event: any, index: number) => {
-          //console.info("event date", event.properties['イベント日'])
+        {featureEvents.map((event: any, index: number) => {
           return (
             <li
               key={event.id}

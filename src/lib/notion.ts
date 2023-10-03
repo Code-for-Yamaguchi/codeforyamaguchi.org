@@ -23,9 +23,19 @@ const notion = new Client({
   auth: process.env.NOTION_TOKEN,
 });
 
-export const getDatabase = cache(async (databaseId: string) => {
+type DatabaseProps = {
+  databaseId: string
+  filter?: any
+  sorts?: any
+  page_size?: number
+}
+
+export const getDatabase = cache(async ({databaseId, filter, sorts, page_size}: DatabaseProps) => {
   const response = await notion.databases.query({
     database_id: databaseId,
+    filter: filter,
+    sorts: sorts,
+    page_size: page_size
   });
   return response.results;
 });
