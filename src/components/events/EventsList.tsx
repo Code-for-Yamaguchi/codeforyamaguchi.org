@@ -8,17 +8,6 @@ type Props = {
   all: boolean
 }
 
-function mkdata (all, data) {
-  if (all) {
-    return EventsLinks
-  } else {
-    /*return EventsLinks.filter((event) => {
-      return new Date(event.date.slice(0, 10)) >= new Date(Date.now())
-    })*/
-    return data
-  }
-}
-
 const eventDatabaseId = process.env.NOTION_EVENT_DATABASE_ID ?? ""
 
 export const EventsList = async ({ all }: Props) => {
@@ -50,7 +39,7 @@ export const EventsList = async ({ all }: Props) => {
   });
 
   //直近のイベント3件を取得
-  const recentPastEvents = await getDatabase({
+  /*const recentPastEvents = await getDatabase({
     databaseId: eventDatabaseId,
     filter: {
       property: 'イベント日',
@@ -65,10 +54,10 @@ export const EventsList = async ({ all }: Props) => {
       }
     ],
     page_size: 3
-  });
+  });*/
 
   //将来も含めた全てのイベントを取得
-  const allEvents = await getDatabase({
+  /*const allEvents = await getDatabase({
     databaseId: eventDatabaseId,
     sorts: [
       {
@@ -77,7 +66,7 @@ export const EventsList = async ({ all }: Props) => {
       }
     ],
     page_size: 100
-  });
+  });*/
 
   return (
     <>
@@ -109,7 +98,7 @@ export const EventsList = async ({ all }: Props) => {
     </>
   )
 
-  return (
+  /*return (
     <>
       {!all && !mkdata(all, events).length
         ? (
@@ -142,5 +131,5 @@ export const EventsList = async ({ all }: Props) => {
         </ul>
           )}
     </>
-  )
+  )*/
 }
