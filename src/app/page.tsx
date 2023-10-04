@@ -11,6 +11,12 @@ import { getDatabase } from '@/lib/notion'
 
 export default async function Home () {
   return (
+    <>
+      {/*<Fuku3D />*/}
+      <PageTop />
+    </>
+  )
+  /*return (
     <div>
       <PageHeader />
       <PageTop />
@@ -22,5 +28,5 @@ export default async function Home () {
       <TopWorks />
       <PageFooter />
     </div>
-  )
+  )*/
 }
