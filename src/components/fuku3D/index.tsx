@@ -3,20 +3,28 @@
 import { Canvas, useFrame } from '@react-three/fiber'
 import { Environment, OrbitControls, useGLTF, Stage, BakeShadows, AccumulativeShadows, RandomizedLight, Center } from "@react-three/drei";
 import { Model } from './Fuku-san';
-import { useRef } from 'react';
+import { ReactNode, useRef } from 'react';
 import { easing } from 'maath'
 
 export const Fuku3D = ({ position = [0, 0, 2.5], fov = 25 }) => {
   return (
-    <Canvas shadows camera={{ position, fov }} gl={{ preserveDrawingBuffer: true }} eventSource={document.getElementById('root')} eventPrefix="client">
+    <Canvas
+      shadows
+      camera={{ position, fov }}
+      gl={{ preserveDrawingBuffer: true }}
+      //eventSource={document.getElementById('root')}
+      eventPrefix="client"
+      //className='touch-none w-full h-full m-0 p-0 overflow-hidden user-select-none'
+    >
       <ambientLight intensity={0.5} />
       <Environment files="https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/potsdamer_platz_1k.hdr" />
 
-      <Backdrop />
-      <Center>
-        <Model name="huku-san" scale={1} />
-        <Model name="HMD" scale={1} />
-      </Center>
+      <CameraRig>
+        {/*<Backdrop />*/}
+        <Center>
+          <Model scale={0.3} />
+        </Center>
+      </CameraRig>
     </Canvas>
   )
   /*return (
@@ -58,11 +66,15 @@ function Backdrop() {
   )
 }
 
-function CameraRig({ children }) {
+type RigType = {
+  children: ReactNode
+}
+
+function CameraRig({ children }: RigType) {
   const group = useRef()
-  //const snap = useSnapshot(state)
   useFrame((state, delta) => {
-    easing.damp3(state.camera.position, [snap.intro ? -state.viewport.width / 4 : 0, 0, 2], 0.25, delta)
+    easing.damp3(state.camera.position, [-state.viewport.width / 4, 0, 2], 0.25, delta)
+    //FIXME: 動いてない
     easing.dampE(group.current.rotation, [state.pointer.y / 10, -state.pointer.x / 5, 0], 0.25, delta)
   })
   return <group ref={group}>{children}</group>

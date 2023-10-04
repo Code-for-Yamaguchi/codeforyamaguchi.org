@@ -12,7 +12,7 @@ import { getDatabase } from '@/lib/notion'
 export default async function Home () {
   return (
     <>
-      {/*<Fuku3D />*/}
+      <Fuku3D />
       <PageTop />
     </>
   )
