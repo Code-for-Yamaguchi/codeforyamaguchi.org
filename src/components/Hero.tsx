@@ -2,7 +2,11 @@ import Link from 'next/link'
 import { Button } from './ui/button'
 import { ExternalLink, CalendarHeart } from 'lucide-react'
 import { Header } from './Header'
-import { AnimatePresenceWrap, MotionDiv, MotionSection } from '@/lib/framerMotion'
+import {
+  AnimatePresenceWrap,
+  MotionDiv,
+  MotionSection,
+} from '@/lib/framerMotion'
 
 export const Hero = () => {
   const transition = { type: 'spring', duration: 0.8 }
@@ -49,12 +53,12 @@ export const Hero = () => {
                   delay: 0.2,
                   delayChildren: 0.2,
                 }}
-                className='w-[500px]'
+                className="w-[500px]"
               >
                 <p className="leading-7 [&:not(:first-child)]:mt-6 mb-[48px]">
                   &quot;山口県にゆかりのある挑戦者を応援する&quot;をミッションに掲げ、ITを使って地域課題を解決することをはじめとしたさまざまな活動を行っていくためのテックコミュニティです。
                 </p>
-                <div className='flex flex-col space-y-6 w-[380px]'>
+                <div className="flex flex-col space-y-6 w-[380px]">
                   <Button asChild>
                     <a
                       target="_blank"

@@ -1,4 +1,3 @@
-
 import { Hero } from '@/components/Hero'
 import { Fuku3D } from '@/components/fuku3D'
 

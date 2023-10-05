@@ -1,5 +1,5 @@
-import Link from "next/link"
-import { JSX, SVGProps } from "react"
+import Link from 'next/link'
+import { JSX, SVGProps } from 'react'
 
 const navigation = {
   main: [
@@ -60,12 +60,18 @@ const navigation = {
 
 export const Footer = () => {
   return (
-    <footer className="bg-white">
-      <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
-        <nav className="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12" aria-label="Footer">
+    <footer className="bg-gray-900">
+      <div className="mx-auto max-w-7xl overflow-hidden px-6 py-14 sm:py-16 lg:px-8">
+        <nav
+          className="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12"
+          aria-label="Footer"
+        >
           {navigation.main.map((item) => (
             <div key={item.name} className="pb-6">
-              <Link href={item.href} className="text-sm leading-6 text-gray-600 hover:text-gray-900">
+              <Link
+                href={item.href}
+                className="text-sm leading-6 text-gray-300 hover:text-white"
+              >
                 {item.name}
               </Link>
             </div>
@@ -73,13 +79,17 @@ export const Footer = () => {
         </nav>
         <div className="mt-10 flex justify-center space-x-10">
           {navigation.social.map((item) => (
-            <a key={item.name} href={item.href} className="text-gray-400 hover:text-gray-500">
+            <a
+              key={item.name}
+              href={item.href}
+              className="text-gray-500 hover:text-gray-400"
+            >
               <span className="sr-only">{item.name}</span>
               <item.icon className="h-6 w-6" aria-hidden="true" />
             </a>
           ))}
         </div>
-        <p className="mt-10 text-center text-xs leading-5 text-gray-500">
+        <p className="mt-10 text-center text-xs leading-5 text-gray-400">
           &copy; 2021 - 2023 Code for Yamaguchi
         </p>
       </div>

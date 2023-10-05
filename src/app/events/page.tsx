@@ -5,7 +5,7 @@ import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { Fuku3D } from '@/components/fuku3D'
 
-const pages = [{ name: 'Events', href: '/events', current: true }]
+const pages = [{ name: 'イベント', href: '/events', current: true }]
 
 export default function Events() {
   return (
@@ -13,7 +13,7 @@ export default function Events() {
       <Header />
       <BreadCrumbs pathList={pages} />
       <DetailTitle title="Events" subtitle="すべてのイベント" />
-     
+
       <Footer />
     </>
   )
