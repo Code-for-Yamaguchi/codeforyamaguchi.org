@@ -1,4 +1,4 @@
-import { PageHeader } from '@/components/PageHeader'
+import { PageHeader } from '@/components/Header'
 import { BreadCrumbs } from '@/components/share/BreadCrumbs'
 import { DetailTitle } from '@/components/share/DetailTitle'
 import { NewsList } from '@/components/news/NewsList'

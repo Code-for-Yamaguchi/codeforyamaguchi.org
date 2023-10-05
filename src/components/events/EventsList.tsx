@@ -57,21 +57,21 @@ export const EventsList = async ({ all }: Props) => {
   });*/
 
   //将来も含めた全てのイベントを取得
-  /*const allEvents = await getDatabase({
+  const allEvents = await getDatabase({
     databaseId: eventDatabaseId,
     sorts: [
       {
-        property: "イベント日",
-        direction: "descending"
-      }
+        property: 'イベント日',
+        direction: 'descending',
+      },
     ],
-    page_size: 100
-  });*/
+    page_size: 100,
+  })
 
   return (
     <>
       <ul className="flex mt-10 justify-center flex-col md:flex-row flex-wrap max-w-7xl mx-auto px-4 sm:px-6">
-        {featureEvents.map((event: any, index: number) => {
+        {allEvents.map((event: any, index: number) => {
           return (
             <li
               key={event.id}

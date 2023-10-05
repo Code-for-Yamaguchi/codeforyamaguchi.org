@@ -1,4 +1,3 @@
-import { PageHeader } from '@/components/PageHeader'
 import { PageTop } from '@/components/PageTop'
 import { TopNews } from '@/components/TopNews'
 import { TopEvents } from '@/components/TopEvents'
