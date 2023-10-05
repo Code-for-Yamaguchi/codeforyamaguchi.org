@@ -4,7 +4,7 @@ import ExternalLink from '../share/externalLink'
 import { ExternalLink as ExternalLinkIcon } from 'lucide-react'
 import { Button } from '../ui/button'
 
-const eventDatabaseId = process.env.NOTION_EVENT_DATABASE_ID ?? ''
+const eventsDatabaseId = process.env.NOTION_EVENTS_DATABASE_ID ?? ''
 
 export const EventsList = async () => {
   const now = new Date()
@@ -55,7 +55,7 @@ export const EventsList = async () => {
 
   //将来も含めた全てのイベントを取得
   const allEvents = await getDatabase({
-    databaseId: eventDatabaseId,
+    databaseId: eventsDatabaseId,
     sorts: [
       {
         property: 'イベント日',
@@ -69,7 +69,7 @@ export const EventsList = async () => {
     <div className="mx-auto max-w-7xl px-6 lg:px-8 pb-24 sm:pb-32">
       <ul className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-12 lg:mx-0 lg:max-w-none lg:grid-cols-3">
         {allEvents &&
-          allEvents.map((event: any, index: number) => {
+          allEvents.map((event: any) => {
             const eventDate = event.properties['イベント日'].date.start
             const eventTitle = event.properties['名前'].title[0].text.content
             const eventDescription =
