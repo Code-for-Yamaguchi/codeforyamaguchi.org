@@ -11,7 +11,7 @@ type Props = {
 
 export const BreadCrumbs = ({ pathList }: Props) => {
   return (
-    <nav className="flex pl-14 py-8" aria-label="Breadcrumb">
+    <nav className="flex pl-6 py-8 lg:pl-14" aria-label="Breadcrumb">
       <ol role="list" className="flex items-center space-x-4">
         <li>
           <div>

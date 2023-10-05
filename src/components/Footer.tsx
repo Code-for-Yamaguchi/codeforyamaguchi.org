@@ -63,7 +63,7 @@ const navigation = {
 export const Footer = () => {
   return (
     <footer className="bg-gray-900">
-      <div className="mx-auto max-w-7xl overflow-hidden px-6 py-14 sm:py-16 lg:px-8">
+      <div className="mx-auto max-w-7xl overflow-hidden px-6 py-12 sm:py-16 lg:px-8">
         <nav
           className="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12"
           aria-label="Footer"

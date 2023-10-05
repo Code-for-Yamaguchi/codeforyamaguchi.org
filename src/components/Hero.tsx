@@ -34,13 +34,13 @@ export const Hero = () => {
                 duration: 0.3,
               }}
             >
-              <h1 className="font-black text-[3rem] lg:text-[4.2rem] tracking-tighter overflow-hidden">
+              <h1 className="font-black text-[2.2rem] lg:text-[4.2rem] tracking-tighter overflow-hidden">
                 山口県にゆかりのある
                 <br />
                 挑戦者を応援する
               </h1>
             </MotionDiv>
-            <div className="relative mt-[100px] left-[300px]">
+            <div className="relative mt-[100px] left-5 lg:left-[300px] w-5/6 lg:w-[500px]">
               <MotionDiv
                 key="p"
                 initial={{ y: 100, opacity: 0 }}
@@ -54,15 +54,16 @@ export const Hero = () => {
                   delay: 0.2,
                   delayChildren: 0.2,
                 }}
-                className="w-[500px]"
               >
                 <p className="leading-7 [&:not(:first-child)]:mt-6 mb-[48px]">
                   &quot;山口県にゆかりのある挑戦者を応援する&quot;をミッションに掲げ、ITを使って地域課題を解決することをはじめとしたさまざまな活動を行っていくためのテックコミュニティです。
                 </p>
-                <div className="flex flex-col space-y-6 w-[380px]">
-                  <Button asChild>
+                <div className="flex flex-col space-y-6 lg:w-[380px]">
+                  <Button asChild className="p-6 lg:p-2">
                     <ExternalLink href="https://join.slack.com/t/codeforyamaguchi/shared_invite/zt-dpiqhr12-LgiU8gAKZ_02Alkc5BoV8w">
-                      オンラインコミュニティ(Slack)への参加はこちら
+                      オンラインコミュニティ(Slack)
+                      <br className="block lg:hidden" />
+                      への参加はこちら
                       <ExternalLinkIcon className="ml-2 h-4 w-4" />
                     </ExternalLink>
                   </Button>

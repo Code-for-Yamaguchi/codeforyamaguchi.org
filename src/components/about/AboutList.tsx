@@ -10,7 +10,7 @@ export const AboutList = () => {
   //TODO: 終了したコロナサイトのデータを追加する
   return (
     <div className="mx-auto max-w-7xl px-6 lg:px-8">
-      <ul className="mx-auto my-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+      <ul className="mx-auto my-8 lg:my-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-12 lg:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
         {AboutLinks.map((about) => (
           <li
             key={about.act}
