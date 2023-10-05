@@ -1,10 +1,9 @@
 'use client'
 
 import { Canvas, useFrame } from '@react-three/fiber'
-import { Environment, OrbitControls, useGLTF, Stage, BakeShadows, AccumulativeShadows, RandomizedLight, Center, Lightformer, Billboard, Sparkles, Shadow, Sky } from "@react-three/drei";
+import { Environment, Center, Lightformer, Sparkles, Shadow, Sky } from "@react-three/drei";
 import { Model } from './Fuku-san';
-import { ReactNode, useLayoutEffect, useRef, useState } from 'react';
-import { easing } from 'maath'
+import { ReactNode, useRef, useState } from 'react';
 
 export const Fuku3D = ({ position = [0, 0, 2.5], fov = 25 }: any) => {
   const [perfSucks, degrade] = useState(true)
