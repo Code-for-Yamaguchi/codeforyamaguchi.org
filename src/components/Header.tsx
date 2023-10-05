@@ -21,6 +21,7 @@ export const Header = () => {
       >
         <Link href="/events">イベント</Link>
         <Link href="/about">私たちについて</Link>
+        <Link href="/members">メンバー</Link>
       </MotionDiv>
     </MotionHeader>
   )

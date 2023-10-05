@@ -5,6 +5,8 @@ const navigation = {
   main: [
     { name: 'トップ', href: '/' },
     { name: 'イベント', href: '/events' },
+    { name: '私たちについて', href: '/about' },
+    { name: 'メンバー', href: '/members' },
   ],
   social: [
     {
