@@ -61,9 +61,7 @@ export const Hero = () => {
                 </p>
                 <div className="flex flex-col space-y-6 w-[380px]">
                   <Button asChild>
-                    <ExternalLink
-                      href="https://join.slack.com/t/codeforyamaguchi/shared_invite/zt-dpiqhr12-LgiU8gAKZ_02Alkc5BoV8w"
-                    >
+                    <ExternalLink href="https://join.slack.com/t/codeforyamaguchi/shared_invite/zt-dpiqhr12-LgiU8gAKZ_02Alkc5BoV8w">
                       オンラインコミュニティ(Slack)への参加はこちら
                       <ExternalLinkIcon className="ml-2 h-4 w-4" />
                     </ExternalLink>

@@ -1,4 +1,4 @@
-import { AnchorHTMLAttributes, FC, ReactNode } from "react"
+import { AnchorHTMLAttributes, FC, ReactNode } from 'react'
 
 interface ExternalLinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   href: string

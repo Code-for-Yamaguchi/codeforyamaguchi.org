@@ -1,19 +1,19 @@
-"use client";
+'use client'
 
-import { useEffect } from "react";
+import { useEffect } from 'react'
 
 interface ContentProps {
-  className: any;
-  content: string;
+  className: any
+  content: string
 }
 
 export const Iframe = ({ className, content }: ContentProps) => {
   useEffect(() => {
-    const iframely = (window as any).iframely;
+    const iframely = (window as any).iframely
     if (iframely) {
-      iframely.load();
+      iframely.load()
     }
-  }, []);
+  }, [])
 
   return (
     <div
@@ -22,5 +22,5 @@ export const Iframe = ({ className, content }: ContentProps) => {
       }}
       className={className}
     />
-  );
-};
+  )
+}
