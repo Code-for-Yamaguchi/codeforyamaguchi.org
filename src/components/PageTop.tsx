@@ -1,9 +1,9 @@
 'use client'
 
-//import { ArrowRightIcon } from '@heroicons/react/solid'
-
 import { AnimatePresence, motion } from 'framer-motion'
 import Link from 'next/link'
+import { Button } from './ui/button'
+import { ExternalLink } from 'lucide-react'
 
 export const PageTop = () => {
   const transition = { type: 'spring', duration: 0.8 }
@@ -14,12 +14,23 @@ export const PageTop = () => {
   }
   return (
     <div className="absolute top-0 left-0 w-full h-full">
-      {/*<motion.header initial={{ opacity: 0, y: -100 }} animate={{ opacity: 1, y: 0 }} transition={transition}>
-        <img src="/logo.svg" alt="logo" />
-        <motion.div animate={{ x: 0, opacity: 1 }} transition={transition}>
-          <AiOutlineShopping size="3em" />
+      <motion.header
+        initial={{ opacity: 0, y: -100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={transition}
+        className="flex justify-between w-full p-[40px] items-center"
+      >
+        <img src="/logo.svg" alt="logo" className="h-16" />
+        <motion.div
+          animate={{ x: 0, opacity: 1 }}
+          transition={transition}
+          className="flex space-x-8"
+        >
+          <div>イベント</div>
+          <div>Code for Yamaguchiについて</div>
+          <div>プロジェクト</div>
         </motion.div>
-  </motion.header>*/}
+      </motion.header>
       <AnimatePresence>
         <motion.section key="main" {...config}>
           <div className="mt-[5vh] ml-[5vw]">
@@ -35,7 +46,7 @@ export const PageTop = () => {
                 duration: 0.3,
               }}
             >
-              <h1 className="font-black text-[5rem] tracking-tighter overflow-hidden">
+              <h1 className="font-black text-[3rem] lg:text-[4.2rem] tracking-tighter overflow-hidden">
                 山口県にゆかりのある
                 <br />
                 挑戦者を応援する
@@ -56,14 +67,19 @@ export const PageTop = () => {
                   delayChildren: 0.2,
                 }}
               >
-                <p className="w-[500px] mb-[48px]">
-                  山口県にゆかりのある挑戦者を応援するをミッションに掲げ、ITを使って地域課題を解決することをはじめとしたさまざまな活動を行っていくためのコミュニティです。
-                  <br />
-                  本コミュニティの趣旨は、（オープンデータを用いた）OSSプロジェクトの制作・運営機会の提供や勉強会などのイベントの計画・開催を活動の主軸としながら、学生を含むクリエイターまたはクリエイターに興味がある人同士の交流や企業とのネットワークを提供していくことを目指しています。
+                <p className="w-[500px] leading-7 [&:not(:first-child)]:mt-6 mb-[48px]">
+                  &quot;山口県にゆかりのある挑戦者を応援する&quot;をミッションに掲げ、ITを使って地域課題を解決することをはじめとしたさまざまな活動を行っていくためのテックコミュニティです。
                 </p>
-                <button className="bg-green-500">
-                  オンラインコミュニティへの参加はこちら
-                </button>
+                <Button asChild>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://join.slack.com/t/codeforyamaguchi/shared_invite/zt-dpiqhr12-LgiU8gAKZ_02Alkc5BoV8w"
+                  >
+                    オンラインコミュニティ(Slack)への参加はこちら
+                    <ExternalLink className="ml-2 h-4 w-4" />
+                  </a>
+                </Button>
               </motion.div>
             </div>
           </div>
