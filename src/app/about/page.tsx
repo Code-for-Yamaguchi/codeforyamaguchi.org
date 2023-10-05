@@ -13,7 +13,7 @@ export default function About() {
     <>
       <Header />
       <BreadCrumbs pathList={pages} />
-      <DetailTitle title="About" subtitle="" />
+      <DetailTitle title="About" subtitle="私たちについて" />
       <AboutList />
       <Iframe
         className='mb-20 px-14'

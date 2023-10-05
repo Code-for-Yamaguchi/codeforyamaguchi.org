@@ -67,7 +67,7 @@ export const EventsList = async () => {
 
   return (
     <div className='mx-auto max-w-7xl px-6 lg:px-8 pb-24 sm:pb-32'>
-      <ul className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+      <ul className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-12 lg:mx-0 lg:max-w-none lg:grid-cols-3">
         {allEvents && allEvents.map((event: any, index: number) => {
           const eventDate = event.properties['イベント日'].date.start
           const eventTitle = event.properties['名前'].title[0].text.content
@@ -80,7 +80,7 @@ export const EventsList = async () => {
           return (
             <li
               key={event.id}
-              className="flex flex-col items-start justify-between"
+              className="flex flex-col items-start justify-start"
             >
               <div
                 className="relative w-full"
@@ -93,7 +93,7 @@ export const EventsList = async () => {
                 <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
               </div>
               <div className="max-w-xl">
-                <div className="mt-8 flex items-center gap-x-4 text-xs">
+                <div className="mt-4 flex items-center gap-x-4 text-xs">
                   <time dateTime={eventDate} className="text-gray-500">
                     {eventDate}
                   </time>

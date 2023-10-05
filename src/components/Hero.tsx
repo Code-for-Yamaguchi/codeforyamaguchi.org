@@ -1,12 +1,13 @@
 import Link from 'next/link'
 import { Button } from './ui/button'
-import { ExternalLink, CalendarHeart } from 'lucide-react'
+import { ExternalLink as ExternalLinkIcon, CalendarHeart } from 'lucide-react'
 import { Header } from './Header'
 import {
   AnimatePresenceWrap,
   MotionDiv,
   MotionSection,
 } from '@/lib/framerMotion'
+import ExternalLink from './share/externalLink'
 
 export const Hero = () => {
   const transition = { type: 'spring', duration: 0.8 }
@@ -60,14 +61,12 @@ export const Hero = () => {
                 </p>
                 <div className="flex flex-col space-y-6 w-[380px]">
                   <Button asChild>
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
+                    <ExternalLink
                       href="https://join.slack.com/t/codeforyamaguchi/shared_invite/zt-dpiqhr12-LgiU8gAKZ_02Alkc5BoV8w"
                     >
                       オンラインコミュニティ(Slack)への参加はこちら
-                      <ExternalLink className="ml-2 h-4 w-4" />
-                    </a>
+                      <ExternalLinkIcon className="ml-2 h-4 w-4" />
+                    </ExternalLink>
                   </Button>
                   <Button asChild>
                     <Link href="/events">
