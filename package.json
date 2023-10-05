@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@notionhq/client": "^2.2.13",
+    "@radix-ui/react-slot": "^1.0.2",
     "@react-three/drei": "^9.86.3",
     "@react-three/fiber": "^8.14.3",
     "class-variance-authority": "^0.7.0",
