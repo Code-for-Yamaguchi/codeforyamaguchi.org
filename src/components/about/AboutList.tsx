@@ -18,7 +18,9 @@ export const AboutList = () => {
             height={150}
           />
 
-          <h3 className="mt-6 mb-4 text-gray-900 text-2xl font-medium">{about.act}</h3>
+          <h3 className="mt-6 mb-4 text-gray-900 text-2xl font-medium">
+            {about.act}
+          </h3>
           <div className="text-gray-500 text-sm">{about.desc}</div>
         </li>
       ))}

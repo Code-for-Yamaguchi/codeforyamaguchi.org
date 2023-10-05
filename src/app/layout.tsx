@@ -20,9 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja" className="scroll-smooth">
-      <body>
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   )
 }

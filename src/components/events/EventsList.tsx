@@ -8,17 +8,17 @@ type Props = {
   all: boolean
 }
 
-const eventDatabaseId = process.env.NOTION_EVENT_DATABASE_ID ?? ""
+const eventDatabaseId = process.env.NOTION_EVENT_DATABASE_ID ?? ''
 
 export const EventsList = async ({ all }: Props) => {
-  const now = new Date();
+  const now = new Date()
   const dateFormatter = new Intl.DateTimeFormat('ja-JP', {
     year: 'numeric',
     month: '2-digit',
     day: '2-digit',
-    timeZone: 'Asia/Tokyo'
-  });
-  const formattedDate = dateFormatter.format(now).replace(/\//g, '-');
+    timeZone: 'Asia/Tokyo',
+  })
+  const formattedDate = dateFormatter.format(now).replace(/\//g, '-')
 
   //将来のイベント取得
   const featureEvents = await getDatabase({
@@ -31,12 +31,12 @@ export const EventsList = async ({ all }: Props) => {
     },
     sorts: [
       {
-        property: "イベント日",
-        direction: "ascending"
-      }
+        property: 'イベント日',
+        direction: 'ascending',
+      },
     ],
-    page_size: 100
-  });
+    page_size: 100,
+  })
 
   //直近のイベント3件を取得
   /*const recentPastEvents = await getDatabase({
@@ -77,10 +77,18 @@ export const EventsList = async ({ all }: Props) => {
               key={event.id}
               className="flex flex-col justify-start items-center bg-white mb-10 mx-6 md:w-2/5"
             >
-              <a href={event.properties.connpass.url || event.properties.peatix.url || event.properties.cluster.url || ""} className="px-10">
+              <a
+                href={
+                  event.properties.connpass.url ||
+                  event.properties.peatix.url ||
+                  event.properties.cluster.url ||
+                  ''
+                }
+                className="px-10"
+              >
                 <img
                   className="flex justify-center"
-                  src={event.cover ? event.cover.file.url : ""}
+                  src={event.cover ? event.cover.file.url : ''}
                   alt={event.properties['名前'].title[0].text.content}
                   //layout="fixed"
                   width={300}
@@ -89,7 +97,9 @@ export const EventsList = async ({ all }: Props) => {
                 <h3 className="mt-6 mb-4 text-normal-hover text-2xl font-medium hover:text-primary max-w-sm">
                   {event.properties['名前'].title[0].text.content}
                 </h3>
-                <div className="text-normal-default text-sm">{event.properties['イベント日'].date.start}</div>
+                <div className="text-normal-default text-sm">
+                  {event.properties['イベント日'].date.start}
+                </div>
               </a>
             </li>
           )

@@ -10,10 +10,10 @@ export const PageTop = () => {
   const config = {
     initial: { x: -100, opacity: 0, transition: { ...transition, delay: 0.5 } },
     animate: { x: 0, opacity: 1, transition: { ...transition, delay: 0 } },
-    exit: { x: -100, opacity: 0, transition: { ...transition, delay: 0 } }
+    exit: { x: -100, opacity: 0, transition: { ...transition, delay: 0 } },
   }
   return (
-    <div className='absolute top-0 left-0 w-full h-full'>
+    <div className="absolute top-0 left-0 w-full h-full">
       {/*<motion.header initial={{ opacity: 0, y: -100 }} animate={{ opacity: 1, y: 0 }} transition={transition}>
         <img src="/logo.svg" alt="logo" />
         <motion.div animate={{ x: 0, opacity: 1 }} transition={transition}>
@@ -21,44 +21,53 @@ export const PageTop = () => {
         </motion.div>
   </motion.header>*/}
       <AnimatePresence>
-          <motion.section key="main" {...config}>
-            <div className="mt-[5vh] ml-[5vw]">
+        <motion.section key="main" {...config}>
+          <div className="mt-[5vh] ml-[5vw]">
+            <motion.div
+              key="title"
+              initial={{ x: 100, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{
+                type: 'spring',
+                damping: 5,
+                stiffness: 40,
+                restDelta: 0.001,
+                duration: 0.3,
+              }}
+            >
+              <h1 className="font-black text-[5rem] tracking-tighter overflow-hidden">
+                山口県にゆかりのある
+                <br />
+                挑戦者を応援する
+              </h1>
+            </motion.div>
+            <div className="relative mt-[100px] left-[300px]">
               <motion.div
-                key="title"
-                initial={{ x: 100, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ type: 'spring', damping: 5, stiffness: 40, restDelta: 0.001, duration: 0.3 }}>
-                <h1 className='font-black text-[5rem] tracking-tighter overflow-hidden'>
-                  山口県にゆかりのある<br />
-                  挑戦者を応援する
-                </h1>
+                key="p"
+                initial={{ y: 100, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{
+                  type: 'spring',
+                  damping: 7,
+                  stiffness: 30,
+                  restDelta: 0.001,
+                  duration: 0.6,
+                  delay: 0.2,
+                  delayChildren: 0.2,
+                }}
+              >
+                <p className="w-[500px] mb-[48px]">
+                  山口県にゆかりのある挑戦者を応援するをミッションに掲げ、ITを使って地域課題を解決することをはじめとしたさまざまな活動を行っていくためのコミュニティです。
+                  <br />
+                  本コミュニティの趣旨は、（オープンデータを用いた）OSSプロジェクトの制作・運営機会の提供や勉強会などのイベントの計画・開催を活動の主軸としながら、学生を含むクリエイターまたはクリエイターに興味がある人同士の交流や企業とのネットワークを提供していくことを目指しています。
+                </p>
+                <button className="bg-green-500">
+                  オンラインコミュニティへの参加はこちら
+                </button>
               </motion.div>
-              <div className="relative mt-[100px] left-[300px]">
-                <motion.div
-                  key="p"
-                  initial={{ y: 100, opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  transition={{
-                    type: 'spring',
-                    damping: 7,
-                    stiffness: 30,
-                    restDelta: 0.001,
-                    duration: 0.6,
-                    delay: 0.2,
-                    delayChildren: 0.2
-                  }}>
-                  <p className='w-[500px] mb-[48px]'>
-                    山口県にゆかりのある挑戦者を応援するをミッションに掲げ、ITを使って地域課題を解決することをはじめとしたさまざまな活動を行っていくためのコミュニティです。
-                    <br />
-                    本コミュニティの趣旨は、（オープンデータを用いた）OSSプロジェクトの制作・運営機会の提供や勉強会などのイベントの計画・開催を活動の主軸としながら、学生を含むクリエイターまたはクリエイターに興味がある人同士の交流や企業とのネットワークを提供していくことを目指しています。
-                  </p>
-                  <button className='bg-green-500'>
-                    オンラインコミュニティへの参加はこちら
-                  </button>
-                </motion.div>
-              </div>
             </div>
-          </motion.section>
+          </div>
+        </motion.section>
       </AnimatePresence>
     </div>
   )

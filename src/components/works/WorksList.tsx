@@ -20,7 +20,9 @@ export const WorksList = () => {
               height={150}
             />
 
-            <h3 className="mt-6 mb-4 text-gray-900 text-2xl font-medium">{work.work}</h3>
+            <h3 className="mt-6 mb-4 text-gray-900 text-2xl font-medium">
+              {work.work}
+            </h3>
             <div className="flex justify-center text-white px-2.5 py-0.5 mx-2 mb-2 rounded-md text-sm font-medium bg-primary w-20">
               {work.tag}
             </div>

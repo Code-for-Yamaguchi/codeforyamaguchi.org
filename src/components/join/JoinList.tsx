@@ -18,7 +18,9 @@ export const JoinList = () => {
             />
           )}
           <div className={join.margin}></div>
-          <h3 className="mt-1 mb-4 text-gray-900 text-2xl font-medium">{join.name}</h3>
+          <h3 className="mt-1 mb-4 text-gray-900 text-2xl font-medium">
+            {join.name}
+          </h3>
           <div className="text-gray-500 text-sm">
             {join.desc}
             {join.invite}

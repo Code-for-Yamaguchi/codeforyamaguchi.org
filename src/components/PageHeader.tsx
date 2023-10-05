@@ -156,7 +156,5 @@ export const PageHeader = () => {
       )}
       </Popover>
   )*/
-  return (
-    <div>page header</div>
-  )
+  return <div>page header</div>
 }

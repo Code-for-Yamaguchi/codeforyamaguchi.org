@@ -1,7 +1,7 @@
 import { SectionTitle } from './share/SectionTitle'
 import { EventsList } from './events/EventsList'
 import { DetailButton } from './share/DetailButton'
-import { getDatabase } from '@/lib/notion';
+import { getDatabase } from '@/lib/notion'
 
 export const TopEvents = async () => {
   return (

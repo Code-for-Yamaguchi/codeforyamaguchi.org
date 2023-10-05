@@ -9,7 +9,7 @@ import { PageFooter } from '@/components/PageFooter'
 import { Fuku3D } from '@/components/fuku3D'
 import { getDatabase } from '@/lib/notion'
 
-export default async function Home () {
+export default async function Home() {
   return (
     <>
       <Fuku3D />
