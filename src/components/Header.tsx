@@ -20,8 +20,7 @@ export const Header = () => {
         className="flex space-x-8"
       >
         <Link href="/events">イベント</Link>
-        <div>Code for Yamaguchiについて</div>
-        <div>プロジェクト</div>
+        <Link href="/about">私たちについて</Link>
       </MotionDiv>
     </MotionHeader>
   )
