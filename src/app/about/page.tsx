@@ -11,7 +11,7 @@ import { LoadingFuku } from '@/components/share/LoadingFuku'
 const pages = [{ name: '私たちについて', href: '/about', current: true }]
 
 export default function About() {
-  /*return (
+  return (
     <>
       <Header />
       <BreadCrumbs pathList={pages} />
@@ -44,6 +44,5 @@ export default function About() {
       />
       <Footer />
     </>
-  )*/
-  return <LoadingFuku />
+  )
 }
