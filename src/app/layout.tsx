@@ -12,7 +12,7 @@ const noto = Noto_Sans_JP({
 const siteName = 'Code for Yamaguchi公式サイト'
 const description =
   '山口県にゆかりのある挑戦者を応援するテックコミュニティです。ITを使って地域課題を解決することをはじめとしたさまざまな活動を行っています。'
-const url = 'https://codeforyamaguchi.org'
+export const url = 'https://codeforyamaguchi.org'
 
 export const metadata: Metadata = {
   title: {
