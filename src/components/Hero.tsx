@@ -60,7 +60,7 @@ export const Hero = () => {
                 <p className="leading-7 [&:not(:first-child)]:mt-6 mb-[48px]">
                   &quot;山口県にゆかりのある挑戦者を応援する&quot;をミッションに掲げ、ITを使って地域課題を解決することをはじめとしたさまざまな活動を行っていくためのテックコミュニティです。
                 </p>
-                <div className="flex flex-col space-y-6 lg:w-[380px]">
+                <div className="flex flex-col space-y-6 lg:w-[380px] mb-6">
                   <Button asChild className="p-6 lg:p-2">
                     <ExternalLink href="https://join.slack.com/t/codeforyamaguchi/shared_invite/zt-dpiqhr12-LgiU8gAKZ_02Alkc5BoV8w">
                       オンラインコミュニティ(Slack)
