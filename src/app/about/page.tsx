@@ -6,11 +6,12 @@ import { Header } from '@/components/Header'
 import { AboutList } from '@/components/about/AboutList'
 import { Iframe } from '@/components/share/Iframe'
 import ExternalLink from '@/components/share/externalLink'
+import { LoadingFuku } from '@/components/share/LoadingFuku'
 
 const pages = [{ name: '私たちについて', href: '/about', current: true }]
 
 export default function About() {
-  return (
+  /*return (
     <>
       <Header />
       <BreadCrumbs pathList={pages} />
@@ -43,5 +44,7 @@ export default function About() {
       />
       <Footer />
     </>
-  )
+  )*/
+  return (
+  <LoadingFuku />)
 }

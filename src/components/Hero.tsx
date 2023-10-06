@@ -17,7 +17,7 @@ export const Hero = () => {
     exit: { x: -100, opacity: 0, transition: { ...transition, delay: 0 } },
   }
   return (
-    <div className="absolute top-0 left-0 w-full h-full">
+    <div className="absolute top-0 left-0 w-full h-full z-50">
       <Header />
       <AnimatePresenceWrap>
         <MotionSection key="main" {...config}>
@@ -38,6 +38,8 @@ export const Hero = () => {
                 山口県にゆかりのある
                 <br />
                 挑戦者を応援する
+                <br />
+                テックコミュニティ
               </h1>
             </MotionDiv>
             <div className="relative mt-[100px] left-5 lg:left-[300px] w-5/6 lg:w-[500px]">

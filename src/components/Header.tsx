@@ -26,7 +26,7 @@ export const Header = () => {
     >
       <Link href="/">
         <span className="sr-only">Code for Yamaguchi</span>
-        <img src="/logo.svg" alt="logo" className="h-11 lg:h-16" />
+        <img src="/logo.svg" alt="Code for Yamaguchi" className="h-11 lg:h-16" />
       </Link>
       <MotionDiv
         animate={{ x: 0, opacity: 1 }}
