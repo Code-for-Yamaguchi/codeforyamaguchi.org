@@ -3,16 +3,17 @@ import { DetailTitle } from '@/components/share/DetailTitle'
 import { EventsList } from '@/components/events/EventsList'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
+import { MembersList } from '@/components/members/MembersList'
 
-const pages = [{ name: 'イベント', href: '/events', current: true }]
+const pages = [{ name: 'メンバー', href: '/members', current: true }]
 
-export default function Events() {
+export default function Members() {
   return (
     <>
       <Header />
       <BreadCrumbs pathList={pages} />
-      <DetailTitle title="Events" subtitle="すべてのイベント" />
-      <EventsList />
+      <DetailTitle title="Members" subtitle="参加メンバー" />
+      <MembersList />
       <Footer />
     </>
   )

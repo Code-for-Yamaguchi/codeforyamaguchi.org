@@ -6,7 +6,7 @@ type Props = {
 export const DetailTitle = ({ title, subtitle }: Props) => {
   return (
     <div className="bg-white">
-      <div className="w-3/5 md:w-1/4 mx-auto py-4 mb-6 px-1 sm:py-6 sm:px-6 lg:px-8 stripe-line">
+      <div className="w-3/5 md:w-1/4 mx-auto py-4 mb-14 px-1 sm:py-6 sm:px-6 lg:px-8 stripe-line">
         <div className="text-center flex justify-center flex-col">
           <h2 className="text-base font-semibold text-indigo-600 tracking-wide uppercase">
             {subtitle}

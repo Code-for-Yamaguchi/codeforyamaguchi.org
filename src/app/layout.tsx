@@ -1,7 +1,12 @@
+import Script from 'next/script'
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Noto_Sans_JP } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const noto = Noto_Sans_JP({
+  weight: ['400', '700'],
+  subsets: ['latin'],
+  variable: '--font-noto-sans-jp',
+})
 
 export const metadata = {
   title: 'Code for Yamaguchi',
@@ -20,9 +25,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja" className="scroll-smooth">
-      <body>
-        {children}
-      </body>
+      <Script src="//cdn.iframe.ly/embed.js" />
+      <body className={`${noto.className}`}>{children}</body>
     </html>
   )
 }

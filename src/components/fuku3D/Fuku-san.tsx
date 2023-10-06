@@ -18,13 +18,19 @@ type GLTFResult = GLTF & {
   }
 }
 
-type ContextType = Record<string, React.ForwardRefExoticComponent<JSX.IntrinsicElements['mesh']>>
+type ContextType = Record<
+  string,
+  React.ForwardRefExoticComponent<JSX.IntrinsicElements['mesh']>
+>
 
 export function Model(props: JSX.IntrinsicElements['group']) {
   const { nodes, materials } = useGLTF('/models/fuku-san.glb') as GLTFResult
   return (
     <group {...props} dispose={null}>
-      <mesh geometry={nodes['huku-san'].geometry} material={materials['texture.001']} />
+      <mesh
+        geometry={nodes['huku-san'].geometry}
+        material={materials['texture.001']}
+      />
       <mesh geometry={nodes.HMD.geometry} material={materials['texture.001']} />
     </group>
   )
