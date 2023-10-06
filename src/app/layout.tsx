@@ -12,9 +12,10 @@ const noto = Noto_Sans_JP({
 const siteName = 'Code for Yamaguchi公式サイト'
 const description =
   '山口県にゆかりのある挑戦者を応援するテックコミュニティです。ITを使って地域課題を解決することをはじめとしたさまざまな活動を行っています。'
-export const url = 'https://codeforyamaguchi.org'
+export const url = new URL('https://codeforyamaguchi.org')
 
 export const metadata: Metadata = {
+  metadataBase: url,
   title: {
     default: siteName,
     template: `%s - ${siteName}`,
@@ -32,10 +33,10 @@ export const metadata: Metadata = {
   ],
   themeColor: '#3CB840',
   icons: [
-    { rel: 'icon', url: `${url}/favicon/favicon.ico` },
-    { rel: 'apple-touch-icon', url: `${url}/favicon/apple-touch-icon.png` },
+    { rel: 'icon', url: `/favicon/favicon.ico` },
+    { rel: 'apple-touch-icon', url: `/favicon/apple-touch-icon.png` },
   ],
-  manifest: `${url}/site.webmanifest`,
+  manifest: `/site.webmanifest`,
   openGraph: {
     title: siteName,
     description,
@@ -45,7 +46,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: `${url}/og.png`,
+        url: `/og.png`,
       },
     ],
   },
@@ -55,10 +56,10 @@ export const metadata: Metadata = {
     description,
     site: '@YamaguchiFor',
     creator: '@nsd244',
-    images: `${url}/og.png`,
+    images: `/og.png`,
   },
   alternates: {
-    canonical: url,
+    canonical: '/',
   },
 }
 
