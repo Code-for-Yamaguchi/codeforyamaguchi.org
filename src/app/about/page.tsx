@@ -45,6 +45,5 @@ export default function About() {
       <Footer />
     </>
   )*/
-  return (
-  <LoadingFuku />)
+  return <LoadingFuku />
 }

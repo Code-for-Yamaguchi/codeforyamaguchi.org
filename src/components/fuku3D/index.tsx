@@ -21,7 +21,7 @@ export const Fuku3D = ({ position = [0, 0, 2.5], fov = 25 }: any) => {
       camera={{ position, fov }}
       gl={{ preserveDrawingBuffer: true }}
       eventPrefix="client"
-      className='z-1'
+      className="z-1"
       //className='touch-none w-full h-full m-0 p-0 overflow-hidden user-select-none'
     >
       <Env perfSucks={perfSucks} />

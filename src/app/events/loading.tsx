@@ -1,7 +1,5 @@
-import { LoadingFuku } from "@/components/share/LoadingFuku";
+import { LoadingFuku } from '@/components/share/LoadingFuku'
 
 export default function Loading() {
-  return (
-    <LoadingFuku />
-  )
+  return <LoadingFuku />
 }
