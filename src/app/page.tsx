@@ -8,17 +8,4 @@ export default async function Home() {
       <Hero />
     </>
   )
-  /*return (
-    <div>
-      <PageHeader />
-      <PageTop />
-      <Fuku3D />
-      <TopNews />
-      <TopEvents />
-      <TopAbout />
-      <TopJoin />
-      <TopWorks />
-      <PageFooter />
-    </div>
-  )*/
 }
