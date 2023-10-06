@@ -2,10 +2,10 @@
 
 <h2 align="center">Code for Yamaguchi公式サイト</h2>
 
-### Overview
+### 概要
 山口県にゆかりのある挑戦者を応援するテックコミュニティ「Code for Yamaguchi」の公式サイトです。NotionをヘッドレスCMSとして使用しています。
 
-### Technology Stack
+### 採用技術
 - [Next.js](https://nextjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Three.js](https://threejs.org/)
@@ -15,6 +15,6 @@
 - [Notion SDK for JavaScript](https://github.com/makenotion/notion-sdk-js)
 - [Cloudflare Pages](https://pages.cloudflare.com/)
 
-### LICENSE
+### ライセンス
 
 [MITライセンス](./LICENSE)の下で公開しています。
