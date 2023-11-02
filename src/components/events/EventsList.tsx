@@ -80,7 +80,7 @@ export const EventsList = async () => {
               ? event.cover.file
                 ? event.cover.file.url
                 : event.cover.external.url
-              : ''
+              : '/noimage.png'
             const connpassUrl = event.properties.connpass
               ? event.properties.connpass.url
               : ''
