@@ -1,7 +1,7 @@
 'use client'
 
-import { Canvas, useFrame } from '@react-three/fiber'
-import { VRButton, XR, Controllers, Hands, useXR } from '@react-three/xr'
+import { useFrame } from '@react-three/fiber'
+import { VRButton, XR, Controllers, Hands } from '@react-three/xr'
 import {
   Environment,
   Center,
@@ -11,21 +11,15 @@ import {
 } from '@react-three/drei'
 import { Model } from './Fuku-san'
 import { ReactNode, useRef, useState } from 'react'
+import { CustomCanvas } from '../share/CustomCanvas'
 
-export const Fuku3D = ({ position = [0, 0, 2.5], fov = 25 }: any) => {
+export const Fuku3D = () => {
   const [perfSucks, degrade] = useState(true)
 
   return (
     <>
       <VRButton />
-      <Canvas
-        shadows
-        camera={{ position, fov }}
-        gl={{ preserveDrawingBuffer: true }}
-        eventPrefix="client"
-        className="z-1"
-        //className='touch-none w-full h-full m-0 p-0 overflow-hidden user-select-none'
-      >
+      <CustomCanvas>
         <XR>
           <Controllers />
           <Hands />
@@ -49,7 +43,7 @@ export const Fuku3D = ({ position = [0, 0, 2.5], fov = 25 }: any) => {
             azimuth={0.25}
           />
         </XR>
-      </Canvas>
+      </CustomCanvas>
     </>
   )
 }
