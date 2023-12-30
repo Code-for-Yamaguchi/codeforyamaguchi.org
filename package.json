@@ -10,8 +10,8 @@
     "inspect:lint": "next lint --dir src",
     "inspect:format": "prettier --check src",
     "fix": "npm-run-all -l -c fix:*",
-    "fix:lint": "next lint --dir src --fix",
-    "fix:format": "pnpm inspect:format --write",
+    "fix:lint": "bun run inspect:lint --fix",
+    "fix:format": "bun run inspect:format --write",
     "prettier:pick": "pretty-quick --staged"
   },
   "dependencies": {
