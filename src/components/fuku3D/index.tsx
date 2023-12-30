@@ -1,11 +1,11 @@
 'use client'
 
 import { Canvas, useFrame } from '@react-three/fiber'
+import { VRButton, XR, Controllers, Hands, useXR } from '@react-three/xr'
 import {
   Environment,
   Center,
   Lightformer,
-  Sparkles,
   Shadow,
   Sky,
 } from '@react-three/drei'
@@ -16,41 +16,41 @@ export const Fuku3D = ({ position = [0, 0, 2.5], fov = 25 }: any) => {
   const [perfSucks, degrade] = useState(true)
 
   return (
-    <Canvas
-      shadows
-      camera={{ position, fov }}
-      gl={{ preserveDrawingBuffer: true }}
-      eventPrefix="client"
-      className="z-1"
-      //className='touch-none w-full h-full m-0 p-0 overflow-hidden user-select-none'
-    >
-      <Env perfSucks={perfSucks} />
-      <CameraRig>
-        <Center>
-          <Model scale={0.3} />
-          <Shadow
-            rotation={[-Math.PI / 2, 0, 0]}
-            scale={0.3}
-            position={[0, -0.3, 0]}
-            color={'black'}
-            opacity={0.5}
+    <>
+      <VRButton />
+      <Canvas
+        shadows
+        camera={{ position, fov }}
+        gl={{ preserveDrawingBuffer: true }}
+        eventPrefix="client"
+        className="z-1"
+        //className='touch-none w-full h-full m-0 p-0 overflow-hidden user-select-none'
+      >
+        <XR>
+          <Controllers />
+          <Hands />
+          <Env perfSucks={perfSucks} />
+          <CameraRig>
+            <Center>
+              <Model scale={0.3} />
+              <Shadow
+                rotation={[-Math.PI / 2, 0, 0]}
+                scale={0.3}
+                position={[0, -0.3, 0]}
+                color={'black'}
+                opacity={0.5}
+              />
+            </Center>
+          </CameraRig>
+          <Sky
+            distance={450000}
+            sunPosition={[0, 1, 0.8]}
+            inclination={0}
+            azimuth={0.25}
           />
-        </Center>
-      </CameraRig>
-      <Sparkles
-        count={25}
-        scale={0.3 * 2}
-        size={6}
-        speed={0.3}
-        color={'white'}
-      />
-      <Sky
-        distance={450000}
-        sunPosition={[0, 1, 0.8]}
-        inclination={0}
-        azimuth={0.25}
-      />
-    </Canvas>
+        </XR>
+      </Canvas>
+    </>
   )
 }
 
