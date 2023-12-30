@@ -20,6 +20,7 @@
     "@radix-ui/react-slot": "^1.0.2",
     "@react-three/drei": "^9.92.7",
     "@react-three/fiber": "^8.15.12",
+    "@react-three/xr": "^5.7.1",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "framer-motion": "^10.16.16",

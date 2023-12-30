@@ -34,7 +34,7 @@ export const Hero = () => {
                 duration: 0.3,
               }}
             >
-              <h1 className="font-black text-[2.2rem] lg:text-[4.2rem] tracking-tighter overflow-hidden">
+              <h1 className="font-black text-[2.2rem] lg:text-[4rem] tracking-tighter overflow-hidden">
                 山口県にゆかりのある
                 <br />
                 挑戦者を応援する
@@ -42,7 +42,7 @@ export const Hero = () => {
                 テックコミュニティ
               </h1>
             </MotionDiv>
-            <div className="relative mt-[100px] left-5 lg:left-[300px] w-5/6 lg:w-[500px]">
+            <div className="relative mt-[3vh] lg:mt-[35px] left-5 lg:left-[250px] w-5/6 lg:w-[500px]">
               <MotionDiv
                 key="p"
                 initial={{ y: 100, opacity: 0 }}
