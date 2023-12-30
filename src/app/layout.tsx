@@ -2,17 +2,13 @@ import Script from 'next/script'
 import './globals.css'
 import { Noto_Sans_JP } from 'next/font/google'
 import { Metadata } from 'next'
+import { description, siteName, url } from '@/constants/metadata'
 
 const noto = Noto_Sans_JP({
   weight: ['400', '700'],
   subsets: ['latin'],
   variable: '--font-noto-sans-jp',
 })
-
-const siteName = 'Code for Yamaguchi公式サイト'
-const description =
-  '山口県にゆかりのある挑戦者を応援するテックコミュニティです。ITを使って地域課題を解決することをはじめとしたさまざまな活動を行っています。'
-export const url = new URL('https://codeforyamaguchi.org')
 
 export const metadata: Metadata = {
   metadataBase: url,
