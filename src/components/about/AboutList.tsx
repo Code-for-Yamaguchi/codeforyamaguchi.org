@@ -35,8 +35,8 @@ export const AboutList = () => {
                 </p>
                 {about.btn && (
                   <Button asChild className="mt-4">
-                    <ExternalLink href="https://join.slack.com/t/codeforyamaguchi/shared_invite/zt-dpiqhr12-LgiU8gAKZ_02Alkc5BoV8w">
-                      コミュニティ(Slack)への参加はこちら
+                    <ExternalLink href="https://discord.gg/3CjrJa69jP">
+                      コミュニティ(Discord)への参加はこちら
                       <ExternalLinkIcon className="ml-2 h-4 w-4" />
                     </ExternalLink>
                   </Button>
