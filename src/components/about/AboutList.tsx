@@ -25,24 +25,24 @@ export const AboutList = () => {
               <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
             </div>
             <div className="max-w-xl">
-              <div className="group relative">
-                <h3 className="mt-4 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                  <span className="absolute inset-0" />
+                <h3 className="mt-4 text-lg font-semibold leading-6 text-gray-900 hover:text-gray-600">
+                  <span className="inset-0" />
                   {about.act}
                 </h3>
                 <p className="mt-3 text-sm leading-6 text-gray-600">
                   {about.desc}
                 </p>
                 {about.btn && (
-                  <Button asChild className="mt-4">
+                  <Button asChild className="p-6 lg:p-2">
                     <ExternalLink href="https://discord.gg/3CjrJa69jP">
-                      コミュニティ(Discord)への参加はこちら
+                      オンラインコミュニティ(Discord)
+                      <br className="block lg:hidden" />
+                      への参加はこちら
                       <ExternalLinkIcon className="ml-2 h-4 w-4" />
                     </ExternalLink>
                   </Button>
                 )}
               </div>
-            </div>
           </li>
         ))}
       </ul>
